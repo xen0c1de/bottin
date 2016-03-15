@@ -7,9 +7,13 @@
     <header>
       <h1>Liste des ressources</h1>
 
-      <form class="new-ressource">
-        <input type="text" name="text" placeholder="Nom de la ressource" />
-      </form>
+      {{> loginButtons}}
+
+      {{#if currentUser}}
+        <form class="new-ressource">
+          <input type="text" name="text" placeholder="Nom de la ressource" />
+        </form>
+      {{/if}}
     </header>
 
     <ul>
@@ -24,6 +28,6 @@
   <li class="{{#if checked}}checked{{/if}}">
     <button class="delete">&times;</button>
     <input type="checkbox" checked="{{checked}}" class="toggle-checked" />
-    <span class="text">{{name}}</span>
+        <span class="text"><strong>{{username}}</strong> - {{firstname}}</span>
   </li>
 </template>
