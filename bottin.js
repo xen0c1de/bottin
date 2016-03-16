@@ -1,6 +1,8 @@
 Ressources = new Mongo.Collection("ressources");
 
 if (Meteor.isClient) {
+  Meteor.subscribe("ressources");
+
   Template.body.helpers({
     ressources: function () {
       return Ressources.find({}, {sort: {name: 1}});
@@ -39,14 +41,10 @@ if (Meteor.isClient) {
       Ressources.remove(this._id);
     }
   });
-
-  Accounts.ui.config({
-    passwordSignupFields: "USERNAME_ONLY"
-  });
 }
 
 if (Meteor.isServer) {
-  Meteor.startup(function () {
-    // code to run on server at startup
+  Meteor.publish("ressources", function () {
+    return Ressources.find({}, {sort: {name: 1}});
   });
 }
