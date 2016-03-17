@@ -21,12 +21,12 @@ let validation = ( template ) => {
     },
     messages: {
       newPassword: {
-        required: "Enter a new password, please.",
-        minlength: "Use at least six characters, please."
+        required: "Entrer un nouveau mot de passe.",
+        minlength: "Minimum de 6 caractères."
       },
       repeatNewPassword: {
-        required: "Repeat your new password, please.",
-        equalTo: "Hmm, your passwords don't match. Try again?"
+        required: "Répéter le mot de passe.",
+        equalTo: "Les mots de passe ne sont pas identiques."
       }
     },
     submitHandler() { _handleReset( template ); }
@@ -41,7 +41,7 @@ let _handleReset = ( template ) => {
     if ( error ) {
       Bert.alert( error.reason, 'danger' );
     } else {
-      Bert.alert( 'Password reset!', 'success' );
+      Bert.alert( 'Mot de passe réinitialisé!', 'success' );
     }
   });
 };

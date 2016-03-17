@@ -1,7 +1,7 @@
 let administrators = [
   {
     name: { first: 'admin', last: 'admin' },
-    email: 'admin@admin.com',
+    email: 'admin@bottin-umf.ca',
     password: 'password'
   }
 ];

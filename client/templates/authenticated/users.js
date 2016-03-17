@@ -37,12 +37,12 @@ Template.users.events({
     });
   },
   'click .revoke-invite': function( event, template ) {
-    if ( confirm( "Are you sure? This is permanent." ) ) {
+    if ( confirm( "Êtes-vous certain? c'est permanent." ) ) {
       Meteor.call( "revokeInvitation", this._id, function( error, response ) {
         if ( error ) {
           Bert.alert( error.reason, "warning" );
         } else {
-          Bert.alert( "Invitation revoked!", "success" );
+          Bert.alert( "Invitation révoquer!", "success" );
         }
       });
     }

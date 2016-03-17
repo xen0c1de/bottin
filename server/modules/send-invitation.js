@@ -21,7 +21,7 @@ let _prepareEmail = ( token ) => {
 let _sendInvitation = ( email, content ) => {
   Email.send({
     to: email,
-    from: "UMF St-Eustache <umf.csss-lddm@ssss.gouv.qc.ca>",
+    from: "UMF St-Eustache <support@bottin-umf.ca>",
     subject: "Invitation au bottin de ressources",
     html: content
   });

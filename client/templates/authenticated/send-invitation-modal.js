@@ -15,11 +15,11 @@ Template.sendInvitationModal.events({
         } else {
           $( "#send-invitation-modal" ).modal( 'hide' );
           $( '.modal-backdrop' ).hide();
-          Bert.alert( "Invitation sent!", "success" );
+          Bert.alert( "Invitation envoyé!", "success" );
         }
       });
     } else {
-      Bert.alert( "Please set an email and at least one user type!", "warning" );
+      Bert.alert( "S'il vous plaît entrer un courriel et choissir un rôle.", "warning" );
     }
   }
 });

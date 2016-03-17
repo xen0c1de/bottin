@@ -19,11 +19,11 @@ let validation = ( template ) => {
     },
     messages: {
       emailAddress: {
-        required: 'Need an email address here.',
-        email: 'Is this email address legit?'
+        required: 'Adresse courriel requise.',
+        email: 'Est-ce que ce courriel est bon?'
       },
       password: {
-        required: 'Need a password here.'
+        required: 'Mot de passe requis.'
       }
     },
     submitHandler() { _handleLogin( template ); }
@@ -38,7 +38,7 @@ let _handleLogin = ( template ) => {
     if ( error ) {
       Bert.alert( error.reason, 'warning' );
     } else {
-      Bert.alert( 'Logged in!', 'success' );
+      Bert.alert( 'Connexion!', 'success' );
     }
   });
 };

@@ -14,6 +14,6 @@ Template.registerHelper( 'selected', ( v1, v2 ) => {
 
 Template.registerHelper( 'humanDate', ( timestamp ) => {
   if ( timestamp ) {
-    return moment( timestamp ).format( "MMMM Do, YYYY" );
+    return moment( timestamp ).format( "DD/MM/YYYY" );
   }
 });
