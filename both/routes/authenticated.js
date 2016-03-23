@@ -37,8 +37,8 @@ authenticatedRoutes.route( '/managers', {
   }
 });
 
-authenticatedRoutes.route( '/', {
-  name: 'home',
+authenticatedRoutes.route( '/list', {
+  name: 'list',
   action() {
     BlazeLayout.render( 'default', { yield: 'home' } );
   }
