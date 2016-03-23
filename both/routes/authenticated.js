@@ -37,9 +37,9 @@ authenticatedRoutes.route( '/managers', {
   }
 });
 
-authenticatedRoutes.route( '/employees', {
-  name: 'employees',
+authenticatedRoutes.route( '/', {
+  name: 'home',
   action() {
-    BlazeLayout.render( 'default', { yield: 'employees' } );
+    BlazeLayout.render( 'default', { yield: 'home' } );
   }
 });

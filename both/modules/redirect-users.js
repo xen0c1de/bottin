@@ -12,10 +12,6 @@ let _sendUserToDefault = ( redirect ) => {
   if ( roles[0] === 'manager' )  {
     _redirectUser( 'managers', redirect );
   }
-
-  if ( roles[0] === 'employee' ) {
-    _redirectUser( 'employees', redirect );
-  }
 };
 
 let _getCurrentUserRoles = () => {
