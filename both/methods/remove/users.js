@@ -3,7 +3,7 @@ Meteor.methods({
     check( userId, String );
 
     try {
-      Users.remove( userId );
+      Meteor.users.remove( userId );
     } catch( exception ) {
       return exception;
     }
