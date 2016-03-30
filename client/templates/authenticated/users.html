@@ -8,6 +8,7 @@
         <tr>
           <th>Adresse courriel</th>
           <th class="text-center">Rôle</th>
+          <th></th>
         </tr>
       </thead>
       <tbody>
@@ -17,9 +18,11 @@
             <td>
               <select {{disableIfAdmin _id}} name="userRole" class="form-control">
                 <option selected="{{selected roles.[0] 'admin'}}" value="admin">Administrateur</option>
-                <option selected="{{selected roles.[0] 'manager'}}" value="manager">Manager</option>
-                <option selected="{{selected roles.[0] 'employee'}}" value="employee">Employee</option>
+                <option selected="{{selected roles.[0] 'manager'}}" value="manager">Gestionnaire de contenu</option>
               </select>
+            </td>
+            <td class="text-center">
+              <button {{disableIfAdmin _id}} type="button" class="btn btn-danger delete-user">Supprimer</button>
             </td>
           </tr>
         {{/each}}

@@ -36,6 +36,17 @@ Template.users.events({
       }
     });
   },
+  'click .delete-user': function( event, template ) {
+    if ( confirm( "Êtes-vous certain? c'est permanent." ) ) {
+      Meteor.call( "deleteUser", this._id, function( error, response ) {
+        if ( error ) {
+          Bert.alert( error.reason, "warning" );
+        } else {
+          Bert.alert( "Utilisateur supprimer!", "success" );
+        }
+      });
+    }
+  },
   'click .revoke-invite': function( event, template ) {
     if ( confirm( "Êtes-vous certain? c'est permanent." ) ) {
       Meteor.call( "revokeInvitation", this._id, function( error, response ) {
