@@ -44,7 +44,7 @@ authenticatedRoutes.route( '/list', {
   }
 });
 
-authenticatedRoutes.route( '/home-auth', {
+authenticatedRoutes.route( '/home', {
   name: 'home-auth',
   action() {
     BlazeLayout.render( 'default', { yield: 'home' } );

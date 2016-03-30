@@ -14,9 +14,7 @@ browser-policy
 meteorhacks:npm
 
 
-themeteorchef:bert
 meteorhacks:ssr
-standard-minifiers
 
 
 npm-container
@@ -29,7 +27,6 @@ meteor-base
 session
 templating
 fourseven:scss
-stevezhu:lodash
 reactive-var
 reactive-dict
 aldeed:collection2
@@ -38,3 +35,7 @@ alanning:roles
 random
 momentjs:moment
 email
+standard-minifier-css
+standard-minifier-js
+stevezhu:lodash
+themeteorchef:bert
