@@ -40,6 +40,13 @@ authenticatedRoutes.route( '/managers', {
 authenticatedRoutes.route( '/list', {
   name: 'list',
   action() {
+    BlazeLayout.render( 'default', { yield: 'ressources' } );
+  }
+});
+
+authenticatedRoutes.route( '/home-auth', {
+  name: 'home-auth',
+  action() {
     BlazeLayout.render( 'default', { yield: 'home' } );
   }
 });
