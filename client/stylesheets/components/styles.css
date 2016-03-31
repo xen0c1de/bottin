@@ -1,5 +1,5 @@
 .jumbotron {
-    background-color: #f4511e; /* Orange */
+    background-color: #2f87c2; /* bleu csss */
     color: #ffffff;
     padding: 100px 25px;
 }
@@ -14,12 +14,12 @@
 
 /* Add an orange color to all icons and set the font-size */
 .logo-small {
-    color: #f4511e;
+    color: #2f87c2;
     font-size: 50px;
 }
 
 .logo {
-    color: #f4511e;
+    color: #2f87c2;
     font-size: 200px;
 }
 
@@ -28,4 +28,8 @@
         text-align: center;
         margin: 25px 0;
     }
+}
+
+.page-header small {
+  color: #ffffff;
 }

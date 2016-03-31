@@ -9,7 +9,7 @@ let accept = ( options ) => {
 };
 
 let _createUser = ( options ) => {
-  var userId = Accounts.createUser( { email: options.email, password: options.password } );
+  var userId = Accounts.createUser( { email: options.email, password: options.password, profile: { name: { first: options.firstName, last: options.lastName } } } );
 
   if ( userId ) {
     return userId;

@@ -9,6 +9,7 @@
       <table class="table table-bordered">
         <thead>
           <tr>
+            <th>Nom</th>
             <th>Adresse courriel</th>
             <th class="text-center">Rôle</th>
             <th></th>
@@ -17,6 +18,7 @@
         <tbody>
           {{#each users}}
             <tr>
+              <td class="text-left text-middle">{{profile.name.first}} {{profile.name.last}}</td>
               <td class="text-left text-middle">{{#if isCurrentUser _id}}<label class="label label-success">Vous!</label>{{/if}} {{emails.[0].address}}</td>
               <td>
                 <select {{disableIfAdmin _id}} name="userRole" class="form-control">
