@@ -15,7 +15,8 @@ Invitations.deny({
 let InvitationsSchema = new SimpleSchema({
   email: {
     type: String,
-    label: "Email à qui l'invitation est envoyé"
+    label: "Email à qui l'invitation est envoyé",
+    max: 200
   },
   token: {
     type: String,
@@ -23,11 +24,13 @@ let InvitationsSchema = new SimpleSchema({
   },
   role: {
     type: String,
-    label: "Le role de l'utilisateur"
+    label: "Le role de l'utilisateur",
+    max: 100
   },
   date: {
     type: String,
-    label: "Date de l'invitation"
+    label: "Date de l'invitation",
+    max: 50
   }
 });
 

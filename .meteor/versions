@@ -26,6 +26,7 @@ callback-hook@1.0.6
 check@1.1.2
 chuangbo:cookie@1.1.0
 coffeescript@1.0.15
+dburles:google-maps@1.1.5
 ddp@1.2.3
 ddp-client@1.2.3
 ddp-common@1.2.3
