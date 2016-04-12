@@ -2,4 +2,17 @@
   <div class="jumbotron">
     <h2 class="page-header"><span class="glyphicon glyphicon-book"></span> Bottin <small>Trouver une ressource</small></h2>
   </div>
+  {{#each ressources}}
+    {{> ressource}}
+  {{/each}}
+</template>
+
+<template name="ressource">
+  <div class="container-fluid">
+    <h3>{{name}}</h3>
+    <p>{{categorie}}</p>
+    <p>{{address}}</p>
+    <p>{{phone}}</p>
+    <p>{{email}}</p>
+  </div>
 </template>

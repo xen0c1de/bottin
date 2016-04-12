@@ -4,8 +4,8 @@ Template.home.helpers({
     if (GoogleMaps.loaded()) {
       // Map initialization options
       return {
-        center: new google.maps.LatLng(45.5707597,-73.9226537),
-        zoom: 8
+        center: new google.maps.LatLng(45.570563, -73.920624),
+        zoom: 14
       };
     }
   }
