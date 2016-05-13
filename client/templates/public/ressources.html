@@ -8,9 +8,11 @@
       <form id="add-ressources">
         <div class="form-group">
           <label for="category">Catégorie</label>
-          <input list="categories" type="text" placeholder="tapez une catégorie" id="category" name="category"></input>
-          <datalist id="categories">
-          </datalist>
+          <select class="form-control" id="categories">
+            {{#each categories}}
+                {{> category}}
+            {{/each}}
+          </select>
           <label for="name">Nom</label>
           <input type="text" name="name" class="form-control" placeholder="Nom de la ressource" value="">
           <label for="emailAddress">Adresse courriel</label>
@@ -43,4 +45,8 @@
     <p>{{phone}}</p>
     <p>{{email}}</p>
   </div>
+</template>
+
+<template name="category">
+    <option value="{{name}}">{{name}}</option>
 </template>

@@ -1,7 +1,7 @@
 Template.header.helpers({
   brandLink() {
     let home = FlowRouter.path( '/' ),
-        index = FlowRouter.path( 'managers' );
+        index = FlowRouter.path( 'list' );
     return !Meteor.loggingIn() && !Meteor.userId() ? home : index;
   }
 });
